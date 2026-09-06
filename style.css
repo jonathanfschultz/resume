@@ -30,6 +30,15 @@ header p {
   color: #555555;
 }
 
+header a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
 aside {
   background-color: #dfe6ec;
   padding: 20px;
@@ -60,8 +69,19 @@ article p {
   color: #555555;
 }
 
+article p.description {
+  font-style: normal;
+  color: #222222;
+}
+
 ul {
   padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media print {
